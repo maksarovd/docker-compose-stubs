@@ -1,0 +1,13 @@
+{
+    "name": "maksarovd/docker-compose-stubs",
+    "version": "1.0.0",
+    "description": "Library of worked and set up compose images",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Maksarov Dmitriy"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
