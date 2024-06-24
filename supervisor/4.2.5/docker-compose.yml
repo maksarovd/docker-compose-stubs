@@ -1,0 +1,14 @@
+version: '3'
+services:
+  supervisor:
+    build:
+      context: supervisor
+      dockerfile: Dockerfile
+    volumes:
+      - './laravel:/var/www/html'
+      - './supervisor/logs:/var/log/supervisor'
+      - './supervisor/upload-worker.conf:/etc/supervisor/conf.d/upload-worker.conf'
+      - './supervisor/supervisord.conf:/etc/supervisor/supervisord.conf'
+    depends_on:
+      - php
+      - redis
